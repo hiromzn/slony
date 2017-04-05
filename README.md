@@ -54,7 +54,7 @@ INSERT 0 1
 $ su - postgres
 $ ./check_data.sh
 check : slavedb:mastertbl
- count 
+ count
 -------
     50
 (1 row)
@@ -63,8 +63,10 @@ check : slavedb:mastertbl
 
 # stop:
 
+```
 stop slon2 for slave
 stop slon1 for master
+```
 
 # clean:
 
@@ -77,4 +79,3 @@ $ del_node.sh
 $ drop_table.sh
 $ drop_db.sh
 ```
-
